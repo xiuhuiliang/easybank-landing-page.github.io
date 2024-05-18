@@ -21,6 +21,12 @@ a, a:visited, a:hover{
     text-decoration: none;
 }
 
+//spacing
+.container{
+    padding-left:1.5rem;
+    padding-right:1.5rem;
+}
+
 //Flexbox
 
 .flex{
@@ -37,29 +43,29 @@ a, a:visited, a:hover{
     &-ai-c{
         align-items: center;
     }
+}
 
-    //button
+//button
 
-    button, .button{
-        padding: 0.875rem 2.1875rem;
-        background: linear-gradient(to right, $limeGreee, $brightCyan);
-        border: 0;
-        border-radius: 50px;
-        cursor: pointer;
-        color: $white;
-        font-weight: 400;
+button, .button{
+    padding: 0.875rem 2.1875rem;
+    background: linear-gradient(to right, $limeGreee, $brightCyan);
+    border: 0;
+    border-radius: 50px;
+    cursor: pointer;
+    color: $white;
+    font-weight: 400;
+}
+
+//visibility
+.hide-for-mobile{
+    @include breakpoint-down(medium){
+        display: none;
     }
+}
 
-    //visibility
-    .hide-for-mobile{
-        @include breakpoint-down(medium){
-            display: none;
-        }
-    }
-
-    .hide-for-desktop{
-        @include breakpoint-up(large){
-            display: none;
-        }
+.hide-for-desktop{
+    @include breakpoint-up(large){
+        display: none;
     }
 }
