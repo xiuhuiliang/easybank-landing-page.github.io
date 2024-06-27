@@ -3,9 +3,6 @@
 }
 
 .article{
-    &__content{
-
-    }
 
     &__grid{
         display: grid;
@@ -43,7 +40,7 @@
     }
 
     &__text{
-        background-color: $white;
+        //background-color: $white;
         padding: 1.875rem 1.875rem 2.5rem 1.875rem;
         color: $grayishBlue;
 
