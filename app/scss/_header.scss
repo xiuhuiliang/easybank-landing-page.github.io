@@ -1,5 +1,7 @@
 .header {
 
+    position: relative;
+    z-index: 1;
     //hamburger open styles
 
     &.open {
@@ -17,29 +19,30 @@
                 transform: rotate(-45deg);
             }
         }
-
     }
 
     .overlay {
         opacity: 0;
         position: fixed;
-        top: 3.75rem;
+        top: 0rem;
         right: 0px;
         bottom: 0px;
         left: 0px;
         background-image: linear-gradient($darkBlue, transparent);
         
 
-        &.fade-in {
-            display: block;
-        }
+        // &.fade-in {
+        //     display: block;
+        // }
 
-        &.fade-out {
-            display: none;
-        }
+        // &.fade-out {
+        //     display: none;
+        // }
     }
     
     nav {
+        position: relative;
+        background-color: $white;
         padding-top: 1.0625rem;
         padding-bottom: 1.0625rem;
     }
@@ -64,19 +67,17 @@
                 margin-bottom: 5px; 
             }
         }
-
-        
     }
     
     &__menu {
         position: absolute;
         width: calc(100% - 3rem);
         left: 50%;
-        transform: translate(-50%);
+        transform: translateX(-50%);
         background: $white;
         margin-top: 1.5rem;
         padding: 1.625rem;
-        border-radius: 3px;
+        border-radius: 5px;
 
         a {
             display: block;
@@ -92,7 +93,7 @@
             position: relative;
             font-size: $font-sm;
             color: $grayishBlue;
-            transition:color 200ms ease-in-out;
+            transition:color 300ms ease-in-out;
 
             &:not(:last-child) {
                 margin-right: 32px;
@@ -108,7 +109,7 @@
                 bottom: -30px;
                 background: linear-gradient(to right, $limeGreee, $brightCyan);
                 opacity: 0;
-                transition: opacity 200ms ease-in-out;
+                transition: opacity 300ms ease-in-out;
             }
 
             &:hover {
@@ -120,7 +121,6 @@
             }
         }
     }
-
 }
 
 
