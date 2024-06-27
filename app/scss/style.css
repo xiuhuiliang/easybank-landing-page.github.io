@@ -306,7 +306,7 @@ button:hover::before, .button:hover::before {
 @media (min-width: 40em) {
   .hero__image {
     min-height: 25rem;
-    background-position: center 60%;
+    background-position: center 70%;
   }
 }
 @media (min-width: 64em) {
@@ -363,10 +363,6 @@ button:hover::before, .button:hover::before {
     order: 1;
     text-align: left;
   }
-}
-.hero__text p {
-  line-height: 1.5;
-  margin-bottom: 2.25rem;
 }
 
 .feature {
